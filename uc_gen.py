@@ -1,6 +1,6 @@
-#=====================================
-#    Unconditional Generation 
-#===================================
+#===========================================================
+#    Unconditional Generation using DiffusionPipeline
+#===========================================================
 
 #!pip install -q diffusers
 from diffusers import DiffusionPipeline, DPMSolverMultistepScheduler
