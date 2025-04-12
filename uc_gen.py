@@ -2,7 +2,9 @@
 #    Unconditional Generation using DiffusionPipeline
 #===========================================================
 
-#!pip install -q diffusers
+!pip install -q diffusers
+
+import matplotlib.pyplot as plt
 from diffusers import DiffusionPipeline, DPMSolverMultistepScheduler
 import torch
 
@@ -20,4 +22,5 @@ pipe.scheduler = DPMSolverMultistepScheduler.from_config(pipe.scheduler.config)
 image = pipe(num_inference_steps=100)
 
 
-image['images'][0]
+plt.figure(figsize=(2,2))
+plt.imshow(image['images'][0])
