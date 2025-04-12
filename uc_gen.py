@@ -2,7 +2,7 @@
 #    Unconditional Generation 
 #===================================
 
-# !pip install diffusers
+#!pip install -q diffusers
 from diffusers import DiffusionPipeline, DPMSolverMultistepScheduler
 import torch
 
